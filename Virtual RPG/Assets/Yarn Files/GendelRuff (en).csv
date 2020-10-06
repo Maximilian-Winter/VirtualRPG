@@ -1,0 +1,12 @@
+id,text,file,node,lineNumber
+line:034dd71,"GendelRuff: Guten Tag Fremder, mein Sohn ist seit einigen Stunden verschwunden. Würdet Ihr ihn bitte suchen?",GendelRuff,GendelRuff,5
+line:0716af4,Ja,GendelRuff,GendelRuff,6
+line:088c375,Nein.,GendelRuff,GendelRuff,7
+line:0e435b1,GendelRuff: Und habt ihr Ihn gefunden?,GendelRuff,GendelRuff,11
+line:0e222e8,Nein.,GendelRuff,GendelRuff,12
+line:033e967,"GendelRuff: Danke für die Hilfe, sehr geehrter Herr.",GendelRuff,GendelRuff,16
+line:032dd9c,GendelRuff: Vielen Dank. Nehmt euch vor den Banditen in Acht!,GendelRuff,GendelRuff.QuestAccepted,22
+line:0db1486,GendelRuff: Bitte sucht weiter und nehmt euch vor den Banditen in Acht!,GendelRuff,GendelRuff.AskWhileQuest,29
+line:0620662,GendelRuff: Bitte Helft mir!,GendelRuff,GendelRuff.QuestDeclined,34
+line:05bf11f,Ja,GendelRuff,GendelRuff.QuestDeclined,36
+line:0dcebb2,Nein.,GendelRuff,GendelRuff.QuestDeclined,37

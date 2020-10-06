@@ -1,0 +1,19 @@
+title: GendelKid
+tags:
+---
+<<if $kid_saved is false>>
+    Gendel Kid: Please help me   #line:017b8fa
+    <<SetFollowTargetOn GendelKind>>
+    <<SetTriggerOn GendelRuffQuestTrigger>>
+    <<if $gendelRuff_questAccepted is false>>
+        <<StartQuest QuestManager 0>>
+    <<endif>>
+    
+<<endif>>
+
+
+<<if $kid_saved >>
+    Gendel Kid: Thank you for the help, dear stranger.  #line:0798722
+<<endif>>
+===
+

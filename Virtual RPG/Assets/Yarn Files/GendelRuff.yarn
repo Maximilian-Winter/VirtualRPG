@@ -1,0 +1,41 @@
+title: GendelRuff
+tags:
+---
+<<if visited("GendelRuff") is false and $kid_saved is false>>
+    Gendel Ruff: Hello stranger, my son has disappeared a few hours ago. Would you please go look for him? #line:034dd71
+    [[Yes|GendelRuff.QuestAccepted]] #line:0716af4
+    [[No|GendelRuff.QuestDeclined]]  #line:088c375
+<<endif>>
+
+<<if visited("GendelRuff") is true and $gendelRuff_questAccepted is false and $kid_saved is false>>
+    Gendel Ruff: Please help me! #line:0880f51
+    [[Yes|GendelRuff.QuestAccepted]]  #line:0c382b4
+    [[No|GendelRuff.QuestDeclined]]  #line:0163f72
+<<endif>>
+
+<<if $gendelRuff_questAccepted and $kid_saved is false>>
+    Gendel Ruff: Did you find Him? #line:0e435b1
+    [[No|GendelRuff.AskWhileQuest]]  #line:0e222e8
+<<endif>>
+
+<<if $kid_saved >>
+    Gendel Ruff: Thank you for your help, dear stranger. #line:033e967
+<<endif>>
+===
+
+title: GendelRuff.QuestAccepted
+---
+Gendel Ruff: Thank you very much. Beware of the bandits! #line:032dd9c
+<<set $gendelRuff_questAccepted to true>>
+<<StartQuest QuestManager 0>>
+===
+
+title: GendelRuff.AskWhileQuest
+---
+Gendel Ruff: Please keep searching and beware of the bandits! #line:0db1486
+===
+
+title: GendelRuff.QuestDeclined
+---
+Gendel Ruff: Please help me! #line:0620662
+===
